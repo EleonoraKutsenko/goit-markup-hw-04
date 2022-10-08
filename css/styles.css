@@ -14,6 +14,7 @@
     --border-bottom-line: #ECECEC;
     --overlay-color: #2f303a66;
     --icon-gray-color: #AFB1B8;
+    --icon-dark-gray-color: #ffffff1a;
 }
 
 body {
@@ -185,8 +186,7 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* max-width: 1600рх; 
-    ask mentor*/
+    /* ask mentor 1600*/
 }
 
 .hero-title {
@@ -381,6 +381,42 @@ footer {
 
 .footer-contact {
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-container-list {
+    display: flex;
+}
+
+.footer-container-item {
+    margin-right: 70px;
+}
+
+.footer-social-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    padding-top: 12px;
+    margin-bottom: 20px;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 206px;
+}
+
+.footer-social-item .social-link {
+    fill: var(--white-color);
+    background-color: var(--icon-dark-gray-color);
+}
+
+.footer-social-item .social-link:hover,
+.footer-social-item .social-link:focus {
+    background-color: var(--accent-color);
 }
 
 /* ===portfolio=== */
