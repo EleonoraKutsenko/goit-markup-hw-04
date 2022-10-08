@@ -13,6 +13,7 @@
     --white-border: #EEEEEE;
     --border-bottom-line: #ECECEC;
     --overlay-color: #2f303a66;
+    --social-gray-color: #AFB1B8;
 }
 
 body {
@@ -66,6 +67,22 @@ img {
 
 .section {
     padding: 94px 0;
+}
+
+.social-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--social-gray-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-color);
+    fill: var(--white-color);
 }
 
 /* ===header=== */
@@ -135,16 +152,6 @@ header {
     fill: var(--gray-text-color);
 }
 
-.icon-email {
-    width: 16px;
-    height: 12px;
-}
-
-.icon-phone {
-    width: 10px;
-    height: 16px;
-}
-
 .menu-item-link:hover,
 .menu-item-link:focus,
 .contacts-link:hover,
@@ -168,6 +175,8 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    /* max-width: 1600рх; 
+    ask mentor*/
 }
 
 .hero-title {
@@ -214,19 +223,13 @@ header {
     margin-right: 30px;
 }
 
-.special-img {
+.special-icon {
     width: 270px;
     height: 120px;
     background-color: var(--gray-bgcolor);
     padding: 25px 100px;
     margin-bottom: 30px;
     display: flex;
-}
-
-.special-icon {
-    width: 70px;
-    height: 70px;
-    display: inline-block;
 }
 
 .special-title {
@@ -299,8 +302,9 @@ header {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--dark-text-color);
-    padding: 30px 0;
+    padding: 30px 32px;
 }
+
 .team-title {
     font-size: 16px;
     font-weight: 500;
@@ -309,7 +313,16 @@ header {
 
 .team-desc {
     color: var(--gray-text-color);
+    margin-bottom: 16px;
 }
+
+.team-social-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 
 /* ===footer=== */
 
