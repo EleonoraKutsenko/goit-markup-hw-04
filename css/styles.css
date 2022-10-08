@@ -178,6 +178,7 @@ header {
 /* ===main=== */
 
 /* ===hero=== */
+
 .section-hero {
     text-align: center;
     background-color: var(--dark-bgcolor);
@@ -186,7 +187,6 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* ask mentor 1600*/
 }
 
 .hero-title {
