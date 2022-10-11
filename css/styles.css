@@ -182,7 +182,10 @@ header {
 .section-hero {
     text-align: center;
     background-color: var(--dark-bgcolor);
+    max-width: 1600px;
     padding: 200px 0;
+    margin-left: auto;
+    margin-right: auto;
     background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url(../images/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -233,13 +236,15 @@ header {
     margin-right: 30px;
 }
 
-.special-icon {
+.special-icon-container {
     width: 270px;
     height: 120px;
+    border-radius: 4px;
     background-color: var(--gray-bgcolor);
-    padding: 25px 100px;
-    margin-bottom: 30px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .special-title {
@@ -327,6 +332,7 @@ header {
 .clients-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -335,15 +341,14 @@ header {
 }
 
 .clients-link {
-    border: 1px solid var(--icon-gray-color);
-    border-radius: 4px;
-    padding: 16px 32px;
+    fill: var(--icon-gray-color);
     width: 170px;
     height: 92px;
+    border: 1px solid var(--icon-gray-color);
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: var(--icon-gray-color);
 }
 
 .clients-link:hover, .clients-link:focus {
@@ -356,6 +361,15 @@ header {
 footer {
     background-color: var(--dark-bgcolor);
     padding: 60px 0;
+}
+
+footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+footer .container div {
+    margin-right: 70px;
 }
 
 .footer-logo {
@@ -383,14 +397,6 @@ footer {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-container-list {
-    display: flex;
-}
-
-.footer-container-item {
-    margin-right: 70px;
-}
-
 .footer-social-title {
     font-weight: 700;
     font-size: 14px;
@@ -398,7 +404,6 @@ footer {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-color);
-    padding-top: 12px;
     margin-bottom: 20px;
 }
 
@@ -471,12 +476,13 @@ footer {
     margin-bottom: 30px;
 }
 
-.portfolio-card:hover, .portfolio-card:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .portfolio-link {
     display: inline-block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-card-text {
