@@ -146,6 +146,7 @@ header {
 
 .contacts-list {
     margin-left: auto;
+    gap: 30px;
 }
 
 .contacts-link {
@@ -154,7 +155,6 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--gray-text-color);
-    margin-right: 30px;
 }
 
 .icon-email, .icon-phone {
@@ -368,7 +368,7 @@ footer .container {
     align-items: baseline;
 }
 
-footer .container div {
+footer .container div:first-of-type {
     margin-right: 70px;
 }
 
